@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Draft and export FLAME University sports event sponsorship memoranda.">
+<title>Sports Sponsorship MoU | FLAME University</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.mjs"></script>
+</head>
+<body>
+<header class="bar">
+ <div class="brand"><img class="brand-logo" src="flame-logo.png" width="35" height="43" alt=""><div><strong>FLAME UNIVERSITY</strong><span>Sports Department</span></div></div>
+ <div class="toolbar"><button type="button" class="quiet" id="sample">Load example</button><button type="button" class="outline" id="reset">New draft</button></div>
+</header>
+<main>
+ <div class="intro"><h1>Sports Sponsorship MoU</h1><p>Draft an event sponsorship agreement and export it to Word for review.</p></div>
+ <div class="workspace">
+  <div class="editor">
+   <nav id="steps" aria-label="Draft sections"></nav>
+   <form id="draft" novalidate></form>
+   <div class="editor-footer"><button type="button" class="outline" id="back">Back</button><span id="save-status" role="status"></span><button type="button" class="primary" id="next">Continue <span aria-hidden="true">→</span></button></div>
+  </div>
+  <aside class="preview" aria-label="Document preview">
+   <header><div><h2>Document preview</h2><span id="preview-label">Updates as you edit</span></div><button type="button" class="primary" id="export">Download Word</button></header>
+   <div id="preview-scroll" tabindex="0" aria-label="Scroll the document preview"><article id="paper"></article></div>
+  </aside>
+ </div>
+ <p class="privacy">Drafts are saved in this browser. Sponsorship details are processed on this device.</p>
+</main>
+</body>
+</html>
