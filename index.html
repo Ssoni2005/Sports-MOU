@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="flame">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Draft and export FLAME University sports event sponsorship memoranda.">
 <title>Sports Sponsorship MoU | FLAME University</title>
 <link rel="stylesheet" href="style.css">
+<script type="module" src="theme.mjs"></script>
 <script type="module" src="app.mjs"></script>
 </head>
 <body>
 <header class="bar">
  <div class="brand"><img class="brand-logo" src="flame-logo.png" width="35" height="43" alt=""><div><strong>FLAME UNIVERSITY</strong><span>Sports Department</span></div></div>
  <div class="toolbar"><button type="button" class="quiet" id="sample">Load example</button><button type="button" class="outline" id="reset">New draft</button></div>
+ <div class="theme-control">
+  <label for="theme-select">Theme</label>
+  <select id="theme-select">
+   <option value="flame">FLAME Classic</option>
+   <option value="editorial">Editorial</option>
+   <option value="blueprint">Blueprint</option>
+   <option value="stadium">Stadium</option>
+   <option value="minimal">Minimal</option>
+  </select>
+ </div>
 </header>
 <main>
  <div class="intro"><h1>Sports Sponsorship MoU</h1><p>Draft an event sponsorship agreement and export it to Word for review.</p></div>
